@@ -9,14 +9,16 @@ const connect = function () {
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
-  console.log("connect succesful"); 
+   
   conn.on("connect", () => {
-  
+  console.log("connect succesful");
 });
   
-
+module
   return conn;
 };
 
-console.log("Connecting ...");
-connect();
+module.export = {
+  connect
+};
+
