@@ -4,6 +4,25 @@
 const net = require("net");
 
 // establishes a connection with the game server
+
+const handleUserInput = function () {
+  // your code here
+   const stdin = process.stdin;
+   stdin.on('data', (key) => {
+  process.stdout.write('.');
+});
+  
+};
+
+const setupInput = function () {
+  const stdin = process.stdin;
+  stdin.setRawMode(true);
+  stdin.setEncoding("utf8");
+  stdin.resume();
+  stdin.on("data", handleUserInput);
+  return stdin;
+};
+
 const connect = function () {
   const conn = net.createConnection({
     Name:"joh"
