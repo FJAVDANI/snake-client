@@ -1,3 +1,10 @@
+let connection;
+let connection;
+
+const setupInput = (conn) => {
+  connection = conn;
+};
+
 const setupInput = function () {
   const stdin = process.stdin;
   stdin.setRawMode(true);
