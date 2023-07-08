@@ -6,3 +6,6 @@ connect();
 
 setupInput();
 
+console.log("Say: _____");
+
+
